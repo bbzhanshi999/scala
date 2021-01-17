@@ -5,7 +5,20 @@ package com.neuedu.chapter678
 //调用方法是有区别的，先要有对象
 object Scala_method{
   def main(args: Array[String]): Unit = {
+    var user = new User07
+    val str = user.+("xxxxxx")
+    println(str)
+
 
   }
 }
 
+class User07 {
+  def login():Boolean = {
+    true
+  }
+
+  def logout = {
+
+  }
+}

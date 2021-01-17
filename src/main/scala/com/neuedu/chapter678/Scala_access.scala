@@ -1,36 +1,36 @@
 package com.neuedu.chapter678
 
 
-package  p1 {
+/*package  p1 {
   package p2 {
-    class Userp2{
+    class UserP2{
       var username = "zhangsan"
       private var password = "1234"
       protected  var email = "xx@,com"
-      private[chapter678] var address = "aaaa"
+      private[p3] var address = "aaaa"
     }
   }
 
   package  p3 {
 
-    import com.neuedu.chapter678.p1.p2.Userp2
+    import com.neuedu.chapter678.p1.p2.UserP2
 
-    class Demo extends Userp2 {
+    class Demo extends UserP2 {
       def main(args: Array[String]): Unit = {
-        val user = new Userp2
+        val user = new UserP2
         println(user.address)
         println(user.email)
         println(user.address)
       }
     }
   }
-}
+}*/
 
 object Scala_access {
 
   def main(args: Array[String]): Unit = {
     val a  =new A()
-    a.clone()
+//    a.clone()
 
   }
 }
@@ -48,7 +48,9 @@ protected  class B {
 }
 
 
+/*
 private class C {
   private[p2] var str = "aaa"
 }
+*/
 

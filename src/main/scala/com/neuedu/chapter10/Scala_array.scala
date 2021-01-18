@@ -3,7 +3,7 @@ package com.neuedu.chapter10
 import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 
-object Scala_list {
+object Scala_array {
   def main(args: Array[String]): Unit = {
     //scala中集合分为两大类：可变mutable & 不可变immutable
 
@@ -61,6 +61,7 @@ object Scala_list {
 //    val i = arrayBuffer.remove(1)
 //    println(i)
       arrayBuffer.remove(1,2) //从第一位开始删除2个元素
+      arrayBuffer.-=(1) //删除一个元素
       println(arrayBuffer.mkString(" "))
 
     //可变数组与不可变的转换

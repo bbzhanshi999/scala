@@ -10,7 +10,7 @@ object Scala_Class1 {
 
 //父类，继承
 //父类没有无参构造时，子类的主构造函数也需要有参，而无参的是辅助构造函数
-class User11(s:String) extends Person11(s) {
+class User11(s:String)  extends Person11(s) {
 
   println("主构造办法User11")
 

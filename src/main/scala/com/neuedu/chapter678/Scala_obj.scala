@@ -1,7 +1,10 @@
 package com.neuedu.chapter678
 
+
+
 import com.neuedu.chapter678.test.Emp
-import com.neuedu.chapter678.test
+
+import scala.beans.BeanProperty
 
 object Scala_obj {
 
@@ -16,6 +19,9 @@ object Scala_obj {
     //等价于
     user.username_=("aaaa") //这行代码等价于上面的=赋值，具体参考字节码
     println(user.username)
+
+    user.setAddress("aaaa")
+    println(user.getAddress)
   }
 }
 
@@ -36,4 +42,6 @@ class User{
   def login():Boolean  ={
     true
   }
+  //@BeanProperty注解是为了和java统一，使得scala中的属性有类似java的get set方法
+  @BeanProperty var  address:String = _
 }

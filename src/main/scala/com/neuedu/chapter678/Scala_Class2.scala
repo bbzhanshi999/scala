@@ -11,7 +11,7 @@ object Scala_Class2 {
 
 object Person12{
   def main(args: Array[String]): Unit = {
-    var p = Person12()
+    var p = new Person12("dsadsad")
   }
 }
 
@@ -21,5 +21,5 @@ object Person12{
 class Person12 private (var name: String) {
   println("主构造方法person")
 //  var name:String = s
-  def apply(name:String)=new Person12(name)
+
 }

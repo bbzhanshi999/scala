@@ -79,10 +79,11 @@ object Scala_Match {
       def apply(z:Double): Double = z*z
     }
 
-    val number = 30.0
+    val number = 81.0
     number match {
       case Square(n)=>println(n)
       case _ =>println("nothing")
     }
+    
   }
 }
